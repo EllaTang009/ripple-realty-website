@@ -270,3 +270,15 @@ footer .legal { border-top: 1px solid rgba(228,223,206,.15); padding-top: 28px; 
   .hero .wrap { padding-top: 80px; padding-bottom: 90px; }
   section { padding: 68px 0; }
 }
+
+/* ---------- Contact block ---------- */
+.contact-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: center; text-align: left; }
+.contact-card { background: rgba(251,249,242,.04); border: 1px solid rgba(216,180,143,.35); padding: 36px; }
+.contact-card .row { display: flex; gap: 14px; margin-bottom: 14px; font-size: .98rem; color: #C9C8B8; }
+.contact-card .row b { color: var(--bronze-light); font-weight: 500; min-width: 86px; letter-spacing: .05em; }
+.contact-card a { color: var(--cream); border-bottom: 1px solid rgba(216,180,143,.4); }
+.qr-box { display: flex; gap: 20px; align-items: center; margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(216,180,143,.25); }
+.qr-box img { width: 132px; height: 132px; border: 1px solid rgba(216,180,143,.4); background: var(--cream); }
+.qr-box p { font-size: .88rem; color: #C9C8B8; }
+.team-card img.portrait { width: calc(100% + 64px); margin: -40px -32px 28px; max-width: none; }
+@media (max-width: 960px) { .contact-grid { grid-template-columns: 1fr; } }
