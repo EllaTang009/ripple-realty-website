@@ -285,3 +285,10 @@ footer .legal { border-top: 1px solid rgba(228,223,206,.15); padding-top: 28px; 
 
 /* ---------- Listing photos (file-swap placeholders) ---------- */
 .listing img.lphoto { width: 100%; height: 300px; object-fit: cover; border: 1px solid var(--line); }
+
+/* Client reviews (Zillow) */
+.rating-badge { display: inline-flex; align-items: center; gap: 10px; margin-top: 20px; font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: var(--text-muted); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+.rating-badge .stars { color: var(--bronze); letter-spacing: .1em; font-size: .95rem; }
+.rating-badge:hover { color: var(--bronze-deep); border-color: var(--bronze); }
+.quote .quote-zh { font-family: var(--font-body); font-size: .95rem; color: var(--text-muted); margin-top: 10px; line-height: 1.7; }
+.reviews-cta { margin-top: 48px; }
