@@ -292,3 +292,10 @@ footer .legal { border-top: 1px solid rgba(228,223,206,.15); padding-top: 28px; 
 .rating-badge:hover { color: var(--bronze-deep); border-color: var(--bronze); }
 .quote .quote-zh { font-family: var(--font-body); font-size: .95rem; color: var(--text-muted); margin-top: 10px; line-height: 1.7; }
 .reviews-cta { margin-top: 48px; }
+
+/* Expandable team bio */
+.bio p + p { margin-top: 1em; }
+.bio.is-clamped { max-height: calc(0.98rem * 1.7 * 9); overflow: hidden; -webkit-mask-image: linear-gradient(#000 65%, transparent); mask-image: linear-gradient(#000 65%, transparent); }
+.bio-toggle { margin-top: 14px; padding: 0; background: none; border: 0; border-bottom: 1px solid var(--bronze-light); cursor: pointer; font-family: var(--font-body); font-size: .74rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--bronze-deep); }
+.bio-toggle:hover { color: var(--bronze); border-color: var(--bronze); }
+.bio-toggle:focus-visible { outline: 2px solid var(--olive); outline-offset: 3px; }

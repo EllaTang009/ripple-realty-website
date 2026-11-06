@@ -74,7 +74,7 @@ h1,h2,h3,.display,.quote p { font-family: "Cormorant Garamond", "Noto Serif SC",
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">核心团队</span><h2>Ripple 背后的人</h2></div>
     <div class="grid c3">
-      <div class="card team-card"><img class="portrait" src="../assets/team-ripple.jpg" alt="Ripple Xiao"><h3>Ripple Xiao</h3><p style="color:var(--bronze-deep);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px">创始人 &amp; 主理经纪人</p><p>十余年房产交易与金融市场分析经验。曾任普华永道高级审计顾问、道富银行股权投资分析师、甲骨文高级金融分析师。上海财经大学国际会计学士,美国布兰迪斯大学金融硕士。持有加州与麻省房地产经纪执照及贷款执照。</p></div>
+      <div class="card team-card"><img class="portrait" src="../assets/team-ripple.jpg" alt="Ripple Xiao"><h3>Ripple Xiao</h3><p style="color:var(--bronze-deep);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px">创始人 &amp; 主理经纪人</p><div class="bio" id="bio-ripple"><p>Ripple Xiao 是一位深受信赖的房地产专家，以出色的谈判能力和全心全意帮助客户实现置业目标而著称。她深耕湾区房地产八年以上，年交易额超过 7,000 万美元，是以稳定、高水准业绩闻名的顶尖经纪人。会计与金融的专业背景，加上曾任普华永道（PwC）审计师的经历，为她以数据驱动的工作方式打下了严谨的分析基础，也让她赢得了客户的高度信赖。</p><p>无论是首次购房者、计划换房升级的家庭，还是为人生下一阶段做准备的卖家，Ripple 都能让交易的每一步清晰、有策略、有底气。她善于解读市场趋势、预判潜在问题，并全力为客户争取利益，因此成为许多客户的首选经纪人。Ripple 相信，每位客户都值得一笔好交易——不仅是价格上的好，更是整个过程体验上的好；而同时做到这两点，正是她最引以为傲的事。</p><p>秉持诚信、清晰沟通与真正个性化的服务，Ripple 让每位客户在整个置业过程中都感到被支持、信息充分、心中有数。她的热情、专业与数据驱动的思维方式，让她在当下竞争激烈的市场中始终脱颖而出。</p></div><button type="button" class="bio-toggle" aria-controls="bio-ripple" aria-expanded="true" data-more="展开全部" data-less="收起" hidden>收起</button></div>
       <div class="card team-card"><img class="portrait" src="../assets/team-chuan.jpg" alt="Chuan Tian"><h3>Chuan Tian</h3><p style="color:var(--bronze-deep);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px">联合创始人</p><p>十余年创业经验,擅长市场趋势预判与战略规划。清华大学电子工程学士,波士顿大学计算机工程硕士。善用数据分析解读湾区与波士顿地产走势,并以智能家居行业的专长为地产发展带来独到见解。</p></div>
       <div class="card team-card"><img class="portrait" src="../assets/team-stella.jpg" alt="Stella Zhou"><h3>Stella Zhou</h3><p style="color:var(--bronze-deep);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px">波士顿管理合伙人</p><p>深耕麻省地产行业多年,在买卖与租赁管理方面经验丰富。毕业于南京大学生命科学系,曾任职哈佛大学医学院从事数据分析与实验室管理。擅长以逻辑和理性分析解决地产问题,以主人翁视角想客户之所想。</p></div>
     </div>
@@ -122,5 +122,17 @@ h1,h2,h3,.display,.quote p { font-family: "Cormorant Garamond", "Noto Serif SC",
     <div class="legal"><span>&copy; 2026 Ripple Realty Group. 保留所有权利。 &nbsp;|&nbsp; CA DRE Broker #02081654</span><span>Equal Housing Opportunity</span></div>
   </div>
 </footer>
+<script>
+document.querySelectorAll('.bio-toggle').forEach(function (btn) {
+  var bio = document.getElementById(btn.getAttribute('aria-controls'));
+  function set(open) {
+    bio.classList.toggle('is-clamped', !open);
+    btn.setAttribute('aria-expanded', open);
+    btn.textContent = open ? btn.dataset.less : btn.dataset.more;
+  }
+  btn.hidden = false; set(false);
+  btn.addEventListener('click', function () { set(btn.getAttribute('aria-expanded') !== 'true'); });
+});
+</script>
 </body>
 </html>
