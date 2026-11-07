@@ -299,3 +299,10 @@ footer .legal { border-top: 1px solid rgba(228,223,206,.15); padding-top: 28px; 
 .bio-toggle { margin-top: 14px; padding: 0; background: none; border: 0; border-bottom: 1px solid var(--bronze-light); cursor: pointer; font-family: var(--font-body); font-size: .74rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--bronze-deep); }
 .bio-toggle:hover { color: var(--bronze); border-color: var(--bronze); }
 .bio-toggle:focus-visible { outline: 2px solid var(--olive); outline-offset: 3px; }
+
+/* Credential badge (Construction page) */
+.credential { display: flex; align-items: center; gap: 20px; margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--line); max-width: 460px; }
+.credential img { display: block; width: 88px; height: 88px; flex-shrink: 0; }
+.credential a { border: 0; }
+.credential-label { display: block; font-size: .7rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--bronze-deep); margin-bottom: 6px; }
+.credential p { font-size: .95rem; color: var(--text-muted); line-height: 1.6; }
