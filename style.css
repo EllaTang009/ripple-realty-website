@@ -301,8 +301,8 @@ footer .legal { border-top: 1px solid rgba(228,223,206,.15); padding-top: 28px; 
 .bio-toggle:focus-visible { outline: 2px solid var(--olive); outline-offset: 3px; }
 
 /* Credential badge (Construction page) */
-.credential { display: flex; align-items: center; gap: 20px; margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--line); max-width: 460px; }
-.credential img { display: block; width: 88px; height: 88px; flex-shrink: 0; }
+.credential { display: flex; align-items: center; gap: 20px; margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--line); max-width: 520px; }
+.credential img { display: block; width: 125px; height: auto; max-width: none; flex-shrink: 0; }
 .credential a { border: 0; }
 .credential-label { display: block; font-size: .7rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--bronze-deep); margin-bottom: 6px; }
 .credential p { font-size: .95rem; color: var(--text-muted); line-height: 1.6; }
