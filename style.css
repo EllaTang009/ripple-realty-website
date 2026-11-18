@@ -311,3 +311,5 @@ footer .legal { border-top: 1px solid rgba(228,223,206,.15); padding-top: 28px; 
 .photo.has-img { background: var(--cream-deep); }
 .photo.has-img::before { display: none; }
 .photo.has-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
+@media (max-width: 960px) { .feature-row .photo-firm { min-height: 0; aspect-ratio: 3 / 2; } }
+.photo-firm img { object-position: 72% 50%; }
